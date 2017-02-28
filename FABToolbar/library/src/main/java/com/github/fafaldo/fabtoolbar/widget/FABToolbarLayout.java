@@ -59,7 +59,7 @@ public class FABToolbarLayout extends RelativeLayout {
 
     private int fabId = -1;
     private int containerId = -1;
-    private int toolbarId = -1;
+    private int fabToolbarId = -1;
 
     private View toolbarLayout;
     private ImageView fab;
@@ -122,7 +122,7 @@ public class FABToolbarLayout extends RelativeLayout {
             return;
         }
 
-        toolbarLayout = findViewById(toolbarId);
+        toolbarLayout = findViewById(fabToolbarId);
         if (toolbarLayout == null) {
             throw new IllegalStateException("You have to place a view with id = R.id.fabtoolbar_toolbar inside FABToolbarLayout");
         }
